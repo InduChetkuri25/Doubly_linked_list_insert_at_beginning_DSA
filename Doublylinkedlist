@@ -11,7 +11,7 @@ public class Doublylinkedlist
         prev=null;
     }
     }
-    public void begin(int data){
+    public void Insertintobeginning(int data){
         Node newNode=new Node(data);
         if(head!=null){
             newNode.next=head;
@@ -29,7 +29,9 @@ public class Doublylinkedlist
     }
     public static void main(String args[]){
         Doublylinkedlist list=new Doublylinkedlist();
-       
+        list.Insertintobeginning(100);
+        list.Insertintobeginning(200);
+        list.Insertintobeginning(300);
     list.printallNodes();
 }
 }
